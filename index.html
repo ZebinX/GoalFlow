@@ -48,17 +48,17 @@
   .fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa 
   .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}
   .fad.fa-inverse{color:#fff}</style><link rel="icon" type="image/x-icon" href="https://mrsecant.github.io/GaussianGrasper/TOD3Cap/static/encosmart.png">
-  <link href="./TOD3Cap/css.css" rel="stylesheet">
+  <link href="./GoalFlow/css.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="./TOD3Cap/bulma.min.css">
-  <link rel="stylesheet" href="./TOD3Cap/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./TOD3Cap/bulma-slider.min.css">
-  <link rel="stylesheet" href="./TOD3Cap/fontawesome.all.min.css">
-  <link rel="stylesheet" href="./TOD3Cap/academicons.min.css">
-  <link rel="stylesheet" href="./TOD3Cap/index.css">
+  <link rel="stylesheet" href="./GoalFlow/bulma.min.css">
+  <link rel="stylesheet" href="./GoalFlow/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./GoalFlow/bulma-slider.min.css">
+  <link rel="stylesheet" href="./GoalFlow/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./GoalFlow/academicons.min.css">
+  <link rel="stylesheet" href="./GoalFlow/index.css">
 
-  <script src="./TOD3Cap/jquery.min.js.下载"></script>
-  <script src="./TOD3Cap/main.js.下载"></script><script src="./TOD3Cap/ViewSDKInterface.js.下载"></script><style type="text/css">.ViewSDK_hideOverflow {
+  <script src="./GoalFlow/jquery.min.js.下载"></script>
+  <script src="./GoalFlow/main.js.下载"></script><script src="./GoalFlow/ViewSDKInterface.js.下载"></script><style type="text/css">.ViewSDK_hideOverflow {
         overflow: hidden;
     }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
         width: 100%;
@@ -131,10 +131,10 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }</style>
-  <script defer="defer" src="./TOD3Cap/fontawesome.all.min.js.下载"></script>
-  <script src="./TOD3Cap/bulma-carousel.min.js.下载"></script>
-  <script src="./TOD3Cap/bulma-slider.min.js.下载"></script>
-  <script src="./TOD3Cap/index.js.下载"></script>
+  <script defer="defer" src="./GoalFlow/fontawesome.all.min.js.下载"></script>
+  <script src="./GoalFlow/bulma-carousel.min.js.下载"></script>
+  <script src="./GoalFlow/bulma-slider.min.js.下载"></script>
+  <script src="./GoalFlow/index.js.下载"></script>
 <style type="text/css">.ViewSDK_hideOverflow {
         overflow: hidden;
     }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
@@ -221,7 +221,10 @@
         margin-right: 305px;
     }</style></head>
 <body data-new-gr-c-s-check-loaded="14.1176.0" data-gr-ext-installed="">
-
+<script type="text/javascript" async
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
 
@@ -230,40 +233,31 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">TOD<sup>3</sup>Cap: Towards 3D Dense Captioning in Outdoor Scenes</h1>
+            <h1 class="title is-2 publication-title">GoalFlow: Goal-Driven Flow Matching for Multimodal Trajectories Generation in End-to-End Autonomous Driving</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block"> <a href="https://scholar.google.com/citations?user=uUd5v2cAAAAJ&hl=zh-CN">Bu Jin</a><sup>1,2</sup>,</span>
-              <span class="author-block"> <a href="https://scholar.google.com/citations?user=anGhGdYAAAAJ&hl=en">Yupeng Zheng</a><sup>1,2*</sup>,</span>
-              <span class="author-block"> <a href="https://philipflyg.github.io/">Pengfei Li</a><sup>3</sup>,</span>
-              <span class="author-block"> <a href="https://ericlee0224.github.io/">Weize Li</a><sup>3</sup>,</span>
-              <span class="author-block"> <a href="https://scholar.google.com/citations?user=Wn2Aic0AAAAJ&hl=en">Yuhang Zheng</a><sup>4</sup>,</span>
-              <span class="author-block"> Sujie Hu<sup>3</sup>,</span>
+              <span class="author-block"> <a href="https://scholar.google.com/citations?hl=zh-CN&user=Fs9_PskAAAAJ">Zebin Xing</a><sup>1,2*</sup>,</span>
+              <span class="author-block"> <a href="https://scholar.google.com.hk/citations?user=ip_zCGMAAAAJ&hl=zh-CN">Xingyu Zhang</a><sup>2*</sup>,</span>
+              <span class="author-block"> <a href="https://scholar.google.com/citations?hl=zh-CN&user=dWEfLw0AAAAJ">Yang Hu</a><sup>2</sup>,</span>
+              <span class="author-block"> <a href="https://scholar.google.com/citations?hl=zh-CN&user=UlDxGP0AAAAJ">Bo Jiang</a><sup>4,2</sup>,</span>
+              <span class="author-block"> <a href="https://tonghe90.github.io/">Tong He</a><sup>5</sup>,</span>
+              <span class="author-block"> <a href="https://scholar.google.com/citations?hl=zh-CN&user=pCY-bikAAAAJ">Qian Zhang</a><sup>2</sup>,</span>
               <br>
-              <span class="author-block"> <a href="https://liuxinyv.github.io/">Xinyu Liu</a><sup>5</sup>,</span>
-              <span class="author-block"> Jinwei Zhu<sup>3</sup>,</span>
-              <span class="author-block"> <a href="https://scholar.google.com/citations?user=4PXGeaYAAAAJ&hl=en&oi=ao">Zhijie Yan</a><sup>3</sup>,</span>
-              <span class="author-block"> Haiyang Sun<sup>2</sup>,</span>
-              <span class="author-block"> Kun Zhan<sup>2</sup>,</span>
-              <span class="author-block"> <a href="https://scholar.google.com/citations?user=Z_QY_VwAAAAJ&hl=en">Peng Jia</a><sup>2</sup>,</span>
-              <br>
-              <span class="author-block"> <a href="http://xxlong.site/">Xiaoxiao Long</a><sup>6</sup>,</span>
-              <span class="author-block"> <a href="https://air.tsinghua.edu.cn/en/info/1046/1621.htm">Yilun Chen</a><sup>3</sup>,</span>
-              <span class="author-block"> <a href="https://sites.google.com/view/fromandto">Hao Zhao</a><sup>3</sup>,</span>
+              <span class="author-block"> <a href="https://www.xxlong.site/">Xiaoxiao Long</a><sup>3</sup>,</span>
+              <span class="author-block"> <a href="https://yvanyin.net/">Wei Yin</a><sup>2&#10013;</sup>,</span>
 
-              <span class="eql-cntrb"><br><strong>(<sup>*</sup>Indicates Corresponding Author)</strong></span>
-              <span class="eql-cntrb"><br><strong>Contact: jinbu18@mails.ucas.ac.cn, zhengyupeng2022@ia.ac.cn</strong></span>
+              <span class="eql-cntrb"><br><strong>(<sup>*</sup> Indicates Equal Contribution, <sup>&#10013;</sup> Indicates Corresponding Author, Project Leader)</strong></span>
+              <span class="eql-cntrb"><br><strong>Contact: xzebin@bupt.edu.cn, yvanwy@outlook.com</strong></span>
                   
             </div>
                   
                   <div class="is-size-5 publication-authors">
                     <br>
-                    <span class="author-block"> <sup>1</sup> CASIA,</span>
-                    <span class="author-block"> <sup>2</sup> Li Auto,</span>
-                    <span class="author-block"> <sup>3</sup> AIR, Tsinghua University,</span>
-                    <span class="author-block"> <sup>4</sup> Beihang University,</span>
-                    <span class="author-block"> <sup>5</sup> HKUST,</span>
-                    <span class="author-block"> <sup>6</sup> HKU,</span>
+                    <span class="author-block"> <sup>1</sup> University of Chinese Academy of Sciences,</span>
+                    <span class="author-block"> <sup>2</sup> Horizon Robot,</span>
+                    <span class="author-block"> <sup>3</sup> Nanjing University,</span>
+                    <span class="author-block"> <sup>4</sup> Huazhong University of Scicence & Technology,</span>
+                    <span class="author-block"> <sup>5</sup> Shanghai AI Laboratory</span>
                     <br><br>
                   </div>
 
@@ -271,7 +265,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/abs/2403.19589" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                        <a href="https://arxiv.org/abs/2503.05689" target="_blank" class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
                         </span>
@@ -280,18 +274,10 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="https://drive.google.com/file/d/1Zsl0yCXezqwLrAYzOb-u33q8gdjvRfAC/view?usp=drive_link" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <svg class="svg-inline--fa fa-database fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="database" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"></path></svg><!-- <i class="fas fa-database"></i> Font Awesome fontawesome.com -->
-                      </span>
-                      <span>Data</span>
-                    </a>
-                  </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/jxbbb/TOD3Cap" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <a href="https://github.com/YvanYin/GoalFlow" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
                     </span>
@@ -325,17 +311,14 @@
         <div class="column">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
-            3D dense captioning stands as a cornerstone in achieving a comprehensive understanding of 3D scenes through natural language. 
-            It has recently witnessed remarkable achievements, particularly in indoor settings.
-            However, the exploration of 3D dense captioning in outdoor scenes is hindered by two major challenges: 
-            1) the <strong>domain gap</strong> between indoor and outdoor scenes, such as dynamics and sparse visual inputs, makes it difficult to directly adapt existing indoor methods; 
-            2) the <strong>lack of data</strong> with comprehensive box-caption pair annotations specifically tailored for outdoor scenes.
-            To this end, we introduce the new task of outdoor 3D dense captioning. 
-            As input, we assume a LiDAR point cloud and a set of RGB images captured by the panoramic camera rig. 
-            The expected output is a set of object boxes with captions.
-            To tackle this task, we propose the <strong>TOD<sup>3</sup>Cap network</strong>, which leverages the BEV representation to generate object box proposals and integrates Relation Q-Former with LLaMA-Adapter to generate rich captions for these objects.
-            We also introduce the <strong>TOD<sup>3</sup>Cap dataset</strong>, the largest one to our knowledge for 3D dense captioning in outdoor scenes, which contains 2.3M descriptions of 64.3K outdoor objects from 850 scenes in nuScenes.
-            Notably, our TOD<sup>3</sup>Cap network can effectively localize and caption 3D objects in outdoor scenes, which outperforms baseline methods by a significant margin (+9.6 CiDEr@0.5IoU).
+		  
+            In autonomous driving scenarios, there is rarely a single suitable trajectory. Recent methods have increasingly focused on modeling multimodal trajectory distributions.
+            However, they suffer from trajectory selection complexity and reduced trajectory quality due to high trajectory divergence and inconsistencies between guidance and scene information.
+			To address these issues, we introduce GoalFlow, a novel method that effectively constrains the generative process to produce high-quality, multimodal trajectories. specifically:
+			1) To resolve the trajectory divergence problem inherent in diffusion-based methods, GoalFlow constrains the generated trajectories by introducing a goal point. 
+			2) GoalFlow establishes a novel scoring mechanism that selects the most appropriate goal point from the candidate points based on scene information.
+			3) Furthermore, GoalFlow employs an efficient generative method, Flow Matching, to generate multimodal trajectories, and incorporates a refined scoring mechanism to select the optimal trajectory from the candidates.
+            Our experimental results, validated on the Navsim, demonstrate that GoalFlow achieves state-of-the-art performance, delivering robust multimodal trajectories for autonomous driving. GoalFlow achieved <strong>PDMS of 90.3</strong>, significantly surpassing other methods. Compared with other diffusion-policy-based methods, our approach requires only <strong>a single denoising step</strong> to obtain excellent performance.
           </div>
         </div>
       </div>
@@ -352,10 +335,9 @@
         <h2 class="title is-3">Contributions</h2>
         <div class="content has-text-justified">
           <ul>
-            <li> We introduce the outdoor 3D dense captioning task to densely detect and describe 3D objects, using LiDAR point clouds along with a set of panoramic RGB images as inputs. 
-              Its unique challenges are highlighted in Fig.1.</li>
-            <li> We provide the <strong>TOD<sup>3</sup>Cap dataset</strong> containing 2.3M descriptions of 63.4k instances in outdoor scenes and adapt existing state-of-the-art approaches on our proposed <strong>TOD<sup>3</sup>Cap dataset</strong> for benchmarking.</li>
-            <li>  We show that our method outperforms the baselines adapted from representative indoor methods by a significant margin (+9.6 CiDEr@0.5IoU).</li>
+            <li> We designed a novel approach to establishing goal points, demonstrating its effectiveness in guiding generative models for trajectory generation.</li>
+            <li> We introduced flow matching to end-to-end autonomous driving and seamlessly integrated it with goal point guidance. </li>
+            <li> Our method achieved state-of-the-art results in Navsim.</li>
           </ul>
         </div>
       </div>
@@ -366,55 +348,110 @@
 
 
 <!-- Image carousel -->
+<!-- Image grid -->
 <section class="hero is-small">
 	<div class="container is-max-desktop">
 	  <div class="hero-body">
-      <h2 class="title">Teaser of TOD<sup>3</sup>Cap</h2>
-      <center><img src="./TOD3Cap/teaser.jpg" alt="main_graph" width="100%" height="100%"></center>
+      <h2 class="title">Demos</h2>
+      
+      <div class="gif-container">
+        <img src="./GoalFlow/676880c7e31252c0.gif" alt="GIF 1">
+        <img src="./GoalFlow/25b719c231d85e56.gif" alt="GIF 2">
+		<img src="./GoalFlow/cf12097663665430.gif" alt="GIF 3">
+		<img src="./GoalFlow/d2440edd19d954b5.gif" alt="GIF 4">
+		<img src="./GoalFlow/fb0a26a28ec359ce.gif" alt="GIF 5">
+		<img src="./GoalFlow/1a1fbb255ec55813.gif" alt="GIF 6">
+      </div>
+
 	    <h2 class="content has-text-justified">
-        Fig1: We introduce the task of 3D dense captioning in outdoor scenes (right). 
-        Given point clouds (right middle) and multi-view RGB inputs (right top), we predict box-caption pairs of all objects in a 3D outdoor scene. 
-        There are several fundamental domain gaps (middle column) between indoor and outdoor scenes, 
-        including <font color="#FF8585">Status</font>, <font color="#92D050">Point Cloud</font>, <font color="#9DC3E8">Perspective</font>, and <font color="#B482DA">Scene Area</font>, bringing new challenges specific to outdoor scenes. 
-        Meanwhile, our outdoor 3D dense captioning (right bottom) contains more comprehensive concepts than indoor scenes (left bottom).
+        <strong>Fig 1:</strong> Driving vedios generated by GoalFlow, where the </strong><span style="color: red;">\( \times \)</span> is the goal point predicted.
 	    </h2>
 	  </div>
 	</div>
 </section>
+
+<style>
+  .gif-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 列 */
+      grid-template-rows: repeat(3, auto); /* 3 行 */
+      gap: 10px; /* 控制 GIF 之间的间距 */
+      justify-items: center; /* 居中对齐 */
+  }
+
+  .gif-container img {
+      width: 100%; /* 让每个 GIF 填满单元格 */
+      height: auto;
+  }
+
+  /* 响应式布局：小屏幕改为 1×6 */
+  @media (max-width: 768px) {
+    .gif-container {
+        grid-template-columns: repeat(1, 1fr); /* 改为 1 列 */
+        grid-template-rows: repeat(6, auto); /* 6 行 */
+    }
+  }
+</style>
+
+
 
 
 <section class="hero is-light">
 	<div class="container is-max-desktop">
 	  <div class="hero-body">
-      <h2 class="title">Pipeline of TOD<sup>3</sup>Cap</h2>
-      <center><img src="./TOD3Cap/main.jpg" alt="main_graph" width="100%" height="100%"></center>
+      <h2 class="title">Pipeline of GoalFlow</h2>
+      <center><img src="./GoalFlow/main_fig.png" alt="main_graph" width="90%" height="90%"></center>
 	    <h2 class="content has-text-justified">
-        Fig2: Architecture of our proposed <strong>TOD<sup>3</sup>Cap</strong> network. 
-        Firstly, BEV features are extracted from 3D LiDAR point cloud and 2D multi-view images, followed by a query-based detection head that generates a set of 3D object proposals from the BEV features. 
-        Secondly, to capture the relationship information, we utilize a Relation Q-Former where the objects interact with other objects and the surrounding environment to get the context-aware features. 
-        Finally, with an Adapter, the features are processed to be prompts for the language model to generate dense captions. 
-        This formulation does not require a re-training process of the language model.
+		<p>
+		  <strong>Fig2:</strong> GoalFlow consists of three modules. The Perception Module is responsible for integrating scene information into a BEV feature 
+		  \( F_{\text{bev}} \), the Goal Point Construction Module selects the optimal goal point from Goal Point Vocabulary 
+		  \( \mathbb{V} \) as guidance information, and the Trajectory Planning Module generates the trajectories by denoising from the Gaussian distribution to the target distribution.
+		  Finally, the Trajectory Scorer selects the optimal trajectory from the candidates.
+		</p>
 	    </h2>
 	  </div>
 	</div>
 </section>
 
-
-<section class="hero is-small is-small">
+<section class="hero is-small">
 	<div class="container is-max-desktop">
 	  <div class="hero-body">
-      <h2 class="title">Qualitative Results</h2>
-      <center><img src="./TOD3Cap/vis.jpg" alt="main_graph" width="100%" height="100%"></center>
+      <h2 class="title">Goal Point Construction</h2>
+      <center><img src="./GoalFlow/goal_construction.png" alt="main_graph" width="90%" height="90%"></center>
 	    <h2 class="content has-text-justified">
-        Fig3: Qualitative results for our proposed <strong>TOD<sup>3</sup>Cap</strong> network. 
-        In the top left, we show our predicted bounding boxes and corresponding captions in the first row and ground truth in the second row. 
-        In the top right, we show our predicted bounding boxes in <font color="0000FF">blue</font> and the ground truth bounding boxes in <font color="FF0000">red</font>. 
-        In the bottom, we mark the wrong descriptions in <font color="FF0000">red</font>.
-        The <strong>TOD<sup>3</sup>Cap</strong> network produces impressive results except for a few mistakes.
+		<p>
+			<strong>Fig 3: </strong>(a) shows the detailed structure of the Goal Point Construction Module, and (b) presents the score distributions of 
+			\( \{ \hat{\delta}^{dis}_i \}^N \), 
+			\( \{ \hat{\delta}^{dac}_i \}^N \), and 
+			\( \{ \hat{\delta}^{final}_i \}^N \), where points with higher scores are highlighted with warmer color.
+		</p>
 	    </h2>
 	  </div>
 	</div>
 </section>
+
+<section class="hero is-light">
+	<div class="container is-max-desktop">
+	  <div class="hero-body">
+      <h2 class="title">Comparison with others</h2>
+      <center><img src="./GoalFlow/visualization.png" alt="main_graph" width="90%" height="90%"></center>
+	    <h2 class="content has-text-justified">
+		<p>
+			<strong>Fig 4: </strong><span style="color: red;">\( \times \)</span> indicates that the trajectory results in a collision or goes beyond the drivable area, while 
+			<span style="color: green;">✔</span> represents a safe trajectory.
+			The <span style="color: orange;">orange</span> points are generated by the Goal Constructor, while the 
+			<span style="color: blue;">blue</span> and 
+			<span style="color: yellow;">yellow</span> points correspond to samples from the vocabulary. 
+			The results highlight that GoalFlow generates higher-quality trajectories compared to the other two methods.
+		</p>
+	    </h2>
+	  </div>
+	</div>
+</section>
+
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 <!-- <section class="hero is-small">
 	<div class="container is-max-desktop">
@@ -466,8 +503,7 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop content">
         <h2 class="title is-3">Acknowledgement</h2>
-            We would like to thank <strong>Dave Zhenyu Chen</strong> at Technical University of Munich for his valuable proofreading and insightful suggestions. 
-            We would also like to thank Lijun Zhou and the student volunteers at Li Auto for their efforts in building the TOD<sup>3</sup>Cap dataset.
+            We would like to thank <strong>Zhenxin Li</strong> at Fudan University for his valuable proofreading and insightful suggestions.
         </div>
       </div>
     </div>
@@ -480,11 +516,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{jin2024tod3cap,
-      title={TOD3Cap: Towards 3D Dense Captioning in Outdoor Scenes},
-      author={Jin, Bu and Zheng, Yupeng and Li, Pengfei and Li, Weize and Zheng, Yuhang and Hu, Sujie and Liu, Xinyu and Zhu, Jinwei and Yan, Zhijie and Sun, Haiyang and others},
-      journal={arXiv preprint arXiv:2403.19589},
-      year={2024}}
+    <pre><code>@article{xing2025goalflow,
+	  title={GoalFlow: Goal-Driven Flow Matching for Multimodal Trajectories Generation in End-to-End Autonomous Driving},
+	  author={Xing, Zebin and Zhang, Xingyu and Hu, Yang and Jiang, Bo and He, Tong and Zhang, Qian and Long, Xiaoxiao and Yin, Wei},
+	  journal={arXiv preprint arXiv:2503.05689},
+	  year={2025}}
     </code></pre>
   </div>
 </section>
